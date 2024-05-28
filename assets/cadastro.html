@@ -1,0 +1,91 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <link rel="stylesheet" href="css/style_cadastro.css">
+    <title>Esay Rent</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/undraw_shopping_re_hdd9.svg" alt="">
+        </div>
+        <div class="form">
+            <form id="cadastro-form" action="save-dados">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div> 
+                    <div class="carrinho-button">
+                        <button type="button"><a href="#">Carrinho</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name-complete">Nome completo</label>
+                        <input id="name-complete" type="text" name="name-complete" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="text" name="phone" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="address">Endereço de entrega</label>
+                        <input id="address" type="text" name="address" placeholder="Rua, Bairro, Numero" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="complement">Complemento</label>
+                        <input id="complement" type="text" name="complement" placeholder="Apt, bloco (Opcional)">
+                    </div>
+                </div>
+
+                <div class="observation-input">
+                    <div class="observation-title">
+                        <h6>Observação</h6>
+                    </div>
+                    <div class="observation-field"></div>
+                    <input id="observation" type="text" name="observation">
+                </div>
+
+                <div class="button-save-cadastro">
+                    <button type="button" id="continuar-button">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Máscara para CPF
+            new Cleave('#cpf', {
+                delimiters: ['.', '.', '-'],
+                blocks: [3, 3, 3, 2],
+                numericOnly: true
+            });
+
+            // Máscara para Telefone
+            new Cleave('#phone', {
+                delimiters: ['(', ') ', '-'],
+                blocks: [0, 2, 5, 4],
+                numericOnly: true
+            });
+
+            document.getElementById('continuar-button').addEventListener('click', function() {
+                const form = document.getElementById('cadastro-form');
+                if (form.checkValidity()) {
+                    window.location.href = 'pagamento.html';
+                } else {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+

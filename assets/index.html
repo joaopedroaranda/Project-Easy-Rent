@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esay Rent</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title-site">Esay Rent</h1>
+    <div class="products">
+        <h2>Produtos</h2>
+        <div>
+            <input type="checkbox" id="produto1" data-name="Produto 1" data-price="10">
+            <label for="produto1">Produto 1 - $10</label>
+        </div>
+        <div>
+            <input type="checkbox" id="produto2" data-name="Produto 2" data-price="15">
+            <label for="produto2">Produto 2 - $15</label>
+        </div>
+        <div>
+            <input type="checkbox" id="produto3" data-name="Forno" data-price="20">
+            <label for="produto3">Produto 3 - $20</label>
+        </div>
+        <div>
+            <input type="checkbox" id="produto4" data-name="Produto 4" data-price="20">
+            <label for="produto3">Produto 4 - $20</label>
+        </div>
+        <div>
+            <input type="checkbox" id="produto3" data-name="Produto 5" data-price="10">
+            <label for="produto3">Produto 5 - $10</label>
+        </div>
+        <div>
+            <input type="checkbox" id="produto3" data-name="Produto 6" data-price="50" data-mensage="Mensagem subliminar"> <!--Base para campo de seleção-->
+            <label for="produto3">Produto 6 - $50</label>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cartItems"></ul>
+        <button id="checkoutButton">Finalizar Compra</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
