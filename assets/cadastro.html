@@ -7,6 +7,9 @@
     <title>Esay Rent</title>
 </head>
 <body>
+    <button class="back-button" onclick="history.back()">
+        Voltar
+    </button>
     <div class="container">
         <div class="form-image">
             <img src="img/undraw_shopping_re_hdd9.svg" alt="">
@@ -58,34 +61,8 @@
             </form>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Máscara para CPF
-            new Cleave('#cpf', {
-                delimiters: ['.', '.', '-'],
-                blocks: [3, 3, 3, 2],
-                numericOnly: true
-            });
-
-            // Máscara para Telefone
-            new Cleave('#phone', {
-                delimiters: ['(', ') ', '-'],
-                blocks: [0, 2, 5, 4],
-                numericOnly: true
-            });
-
-            document.getElementById('continuar-button').addEventListener('click', function() {
-                const form = document.getElementById('cadastro-form');
-                if (form.checkValidity()) {
-                    window.location.href = 'pagamento.html';
-                } else {
-                    alert('Por favor, preencha todos os campos obrigatórios.');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
+
 
 

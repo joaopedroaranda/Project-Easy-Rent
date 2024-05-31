@@ -16,6 +16,22 @@ body {
     background-color: #fde4ba;
 }
 
+.back-button {
+    background-color: #F9A826;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 .container {
     width: 80%;
     height: 80vh;
@@ -151,9 +167,10 @@ body {
 .button-save-cadastro button a {
     text-decoration: none;
     font-size: 0.93rem;
-    font-weight: 500;
+    font-weight: 2rem;
     color: #fff;
 }
+
 
 @media screen and (max-width: 1330px){
     .form-image {
@@ -191,6 +208,10 @@ body {
     body {
         height: auto;
         padding: 1rem;
+    }
+    
+    .back-button {
+        display: none;
     }
 
     .container {

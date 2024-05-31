@@ -7,6 +7,9 @@
     <title>Esay Rent</title>
 </head>
 <body>
+    <button class="back-button" onclick="history.back()">
+        Voltar
+    </button>
     <div class="container">
         <div class="form">
             <form action="save-payment">
@@ -15,8 +18,8 @@
                 </div>
                 <div class="checkbox-group">
                     <div class="input-box">
-                        <label for="selected-pix">Cartão de Debito</label>
-                        <input id="selected-pix" type="checkbox" name="selected-pix">
+                        <label for="selected-debit">Cartão de Debito</label>
+                        <input id="selected-debit" type="checkbox" name="selected-debit">
                     </div>
                     <div class="input-box">
                         <label for="selected-credit">Cartão de Credito</label>
@@ -27,8 +30,8 @@
                         <input id="selected-pix" type="checkbox" name="selected-pix">
                     </div>
                     <div class="input-box">
-                        <label for="selected-maney">Dinheiro</label>
-                        <input id="selected-maney" type="checkbox" name="selected-maney">
+                        <label for="selected-money">Dinheiro</label>
+                        <input id="selected-money" type="checkbox" name="selected-money">
                     </div>
                 </div>
 
@@ -37,6 +40,6 @@
                 </div>
             </form>
         </div>
-    </div>  
+    </div> 
 </body>
 </html>

@@ -12,20 +12,48 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fde4ba;
+    position: relative;
+}
+
+.back-button {
+    background-color: #F9A826;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #fab23f;
+}
+
+.back-button i {
+    margin-right: 8px;
 }
 
 .container {
+    width: 80%;
+    display: flex;
     background-color: #fff;
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     max-width: 400px;
-    width: 100%;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .title {
@@ -36,16 +64,18 @@ body {
 .checkbox-group {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .input-box {
     margin: 0.6rem 0;
-    padding: 0.1rem 1rem;
+    padding: 1.5rem 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 1px 1px 6px #0000001c;
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .input-box label {
@@ -55,7 +85,7 @@ body {
 .input-box input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 2px solid #ccc;
     appearance: none;
     -webkit-appearance: none;
@@ -65,14 +95,14 @@ body {
 }
 
 .input-box input[type="checkbox"]:checked {
-    background-color: #4caf50;
-    border-color: #4caf50;
+    background-color: #F9A826;
+    border-color: #F9A826;
 }
 
 .button-save-pagamento {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .button-save-pagamento button {
@@ -93,4 +123,3 @@ body {
 .button-save-pagamento button:hover {
     background-color: #fab23f;
 }
-
