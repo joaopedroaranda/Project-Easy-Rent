@@ -17,30 +17,6 @@ body {
     position: relative;
 }
 
-.back-button {
-    background-color: #F9A826;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.back-button:hover {
-    background-color: #fab23f;
-}
-
-.back-button i {
-    margin-right: 8px;
-}
-
 .container {
     width: 80%;
     display: flex;
@@ -126,4 +102,10 @@ body {
     background-color: #fab23f;
 }
 
+@media screen and (max-width: 767px) {
+    .back-button {
+        display: none;
+        
+    }
 
+}
