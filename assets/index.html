@@ -3,44 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esay Rent</title>
+    <title>Easy Rent</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1 id="title-site">Esay Rent</h1>
-    <div class="products">
-        <h2>Produtos</h2>
-        <div>
-            <input type="checkbox" id="produto1" data-name="Produto 1" data-price="10">
-            <label for="produto1">Produto 1 - $10</label>
+    <div class="container">
+        <div class="logo-site">
+            <img src="img Produtos/logo.png" alt="Logo do site">
         </div>
-        <div>
-            <input type="checkbox" id="produto2" data-name="Produto 2" data-price="15">
-            <label for="produto2">Produto 2 - $15</label>
+        
+        <p class="text-select">Selecione os itens desejados: <br></p>
+        <div class="form">
+            <form id="selec-itens" action="save-dados">
+                <div class="checkbox-group" name="produtos">
+                    <div class="input-group">
+                        <img src="img Produtos/batedeira britania.jpg" alt="Batedeira Britania">
+                        <label for="produto1">Batedeira Britania</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto1" data-name="Batedeira" data-price="R$79,90">
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/chapa.jpg" alt="Sanduicheira">
+                        <label for="produto2">Sanduicheira</label>
+                        <p class="text-value"><s>De:529,90</s><br>Por:79,90</p>
+                        <input type="checkbox" id="produto2" data-name="Sanduicheira" data-price="R$29,90"> 
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/liquidificador.jpg" alt="Liquidificador">
+                        <label for="produto3">Liquidificador</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto3" data-name="Liquidificador" data-price="R$39,90">
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/121343084.jpg" alt="Panela Elétrica">
+                        <label for="produto4">Panela Elétrica</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto4" data-name="Panela Elétrica" data-price="R$69,90">
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/airfrier (1).jpg" alt="Air Fryer">
+                        <label for="produto5">Air Fryer</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto5" data-name="Air Fryer" data-price="R$49,90">
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/cabelo.jpg" alt="Escova Rotativa">
+                        <label for="produto6">Escova Rotativa</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto6" data-name="Escova Rotativa" data-price="R$49,90"> 
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/mixer.jpg" alt="Mixer">
+                        <label for="produto7">Mixer</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto7" data-name="Mixer" data-price="R$59,90"> 
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/panela de fundie.jpg" alt="Kit Fondue">
+                        <label for="produto8">Kit Fondue</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto8" data-name="Kit Fondue" data-price="R$39,90"> 
+                    </div>
+                    <div class="input-group">
+                        <img src="img Produtos/chapinha.jpg" alt="Prancha G-Style">
+                        <label for="produto9">Prancha G-Style</label>
+                        <p class="text-value"><s>De:529,90</s> <br>Por:79,90</p>
+                        <input type="checkbox" id="produto9" data-name="Prancha G-Style" data-price="R$39,90"> 
+                    </div>
+                </div>
+            </form>
         </div>
-        <div>
-            <input type="checkbox" id="produto3" data-name="Forno" data-price="20">
-            <label for="produto3">Produto 3 - $20</label>
-        </div>
-        <div>
-            <input type="checkbox" id="produto4" data-name="Produto 4" data-price="20">
-            <label for="produto3">Produto 4 - $20</label>
-        </div>
-        <div>
-            <input type="checkbox" id="produto3" data-name="Produto 5" data-price="10">
-            <label for="produto3">Produto 5 - $10</label>
-        </div>
-        <div>
-            <input type="checkbox" id="produto3" data-name="Produto 6" data-price="50" data-mensage="Mensagem subliminar"> <!--Base para campo de seleção-->
-            <label for="produto3">Produto 6 - $50</label>
+    
+                <div class="continue-button">
+                    <button>Continuar</button>
+                </div>
+            </form>
         </div>
     </div>
-
-    <div class="cart">
-        <h2>Carrinho de Compras</h2>
-        <ul id="cartItems"></ul>
-        <button><a href="cadastro.html">Continuar</a></button>
-    </div>
-
+    <script src="scripts/script.js"></script>   
+    <script src="scripts/script_form.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
